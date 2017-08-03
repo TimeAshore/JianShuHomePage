@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="jianshu@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.1">
+    <root id="1"/>
+    <schema id="2" parent="1" name="jianshu">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="clo"/>
+    <schema id="4" parent="1" name="daili_ip"/>
+    <schema id="5" parent="1" name="information_schema"/>
+    <schema id="6" parent="1" name="lagou"/>
+    <schema id="7" parent="1" name="mysql"/>
+    <schema id="8" parent="1" name="performance_schema"/>
+    <schema id="9" parent="1" name="scrapy"/>
+    <schema id="10" parent="1" name="sys"/>
+    <schema id="11" parent="1" name="teach"/>
+    <table id="12" parent="2" name="home_articles"/>
+    <column id="13" parent="12" name="article_name">
+      <Position>1</Position>
+      <Comment>文章标题</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="14" parent="12" name="auther">
+      <Position>2</Position>
+      <Comment>作者</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="15" parent="12" name="content">
+      <Position>3</Position>
+      <Comment>文章内容</Comment>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="16" parent="12" name="link">
+      <Position>4</Position>
+      <Comment>文章链接</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="17" parent="12" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>article_name</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
